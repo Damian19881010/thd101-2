@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Player 玩具模人</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="shortcut icon" type="image/png" href="../images/LOGO/LOGO4.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <img src="../images/LOGO/logo.png" alt="LOGO">
+      </div>
+      <div class="bar1">
+        <ul>
+          <input class="search" type="search" placeholder="  請輸入關鍵字" name="q" id="search" autocomplete="off
+            "><!--輸入標籤-->
+          </li>
+        </ul>
+        <ul>
+          <!-- <li><a href="#">會員登入</a></li> -->
+          <li>
+            <a href="#"></a><img src="../images/icon/Header/people-1.png" alt="">
+          </li>
+        </ul>
+        <ul>
+          <!-- <li><a href="#">購物車</a></li> -->
+          <li>
+            <a href="#"></a><img src="../images/icon/Header/car-1.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </header>
+
+  </div>
+  <!-----------------------------nav 導覽列  ------------------------------->
+  <nav>
+    <ul>
+      <li><a href="../HTML/INDEX.html">首頁 <span>INDEX</span></a></li>
+      <li><a href="../HTML/NEWS.html">最新消息 <span>NEWS</span></a></li>
+      <li><a href="../HTML/PRODUCT.html">主要商品 <span>PRODUCT</span></a>
+        <ul class="submenu">
+          <li class="subli"><a href="../HTML/PRODUCT.html"><img src="../images/icon/nav/GUNDAM.png" alt="">Gundam
+              鋼彈模型</a></li>
+          <li class="subli"><a href="../HTML/PRODUCT.html"><img src="../images/icon/nav/KITIBUKYA.png" alt="">壽屋模型</a>
+          </li>
+          <li class="subli"><a href="../HTML/PRODUCT.html"><img src="../images/icon/nav/BANDAI.png" alt="">萬代組裝模型</a>
+          </li>
+          <li class="subli"><a href="../HTML/PRODUCT.html"><img src="../images/icon/nav/HOT.png" alt=""> 熱門作品相關</a></li>
+          <li class="subli"><a href="../HTML/PRODUCT.html"><img src="../images/icon/nav/EGG.png" alt=""> 日系景品/盒玩/扭蛋</a>
+          </li>
+          <li class="subli"><a href="../HTML/PRODUCT.html"><img src="../images/icon/nav/TAMASHII.png" alt="">TAMASHII
+              魂限</a></li>
+          <li class="subli"><a href="../HTML/PRODUCT.html"><img src="../images/icon/nav/TAMIYA.png" alt="">TAMIYA
+              田宮模型</a></li>
+          <li class="subli"><a href="../HTML/PRODUCT.html"><img src="../images/icon/nav/SPECIL.png" alt="">特攝系列</a></li>
+          <li class="subli"><a href="../HTML/PRODUCT.html"><img src="../images/icon/nav/BBOX.png" alt=""> Blind
+              Box各式盲盒</a></li>
+        </ul>
+      </li>
+      <li><a href="../HTML/PRODUCT.html">關於我<span>ABOUT</span></a></li>
+      <li><a href="../HTML/FAQ.html">常見問題 <span>FAQ</span></a></li>
+    </ul>
+  </nav>
+
+  <!--------------------------- Banner 橫幅----------------------------->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../images/banner/Banner 1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="../images/banner/BANNER2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="../images/banner/BANNER3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="../images/banner/BANNER4.jpg" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </div>
+  <!--------------------------- LinkBTN ----------------------------->
+  <div class="linkbtn">
+
+    <ul class="linkBtnList">
+      <li class="a">
+        <a href="../HTML/NEWS.html">
+          <h3>NEWS</h3>
+        </a>
+        <div class="triangle"></div>
+        <div class="=imgcol"><img src="../images/icon/Btn/LEFT.png" alt=""></div>
+      </li>
+
+      <li class="b">
+        <a href="#">
+          <h3>ABOUT</h3>
+        </a>
+        <div class="triangle"></div>
+        <div class="imgcol"><img src="../images/icon/Btn/RIGHT.png" alt=""></div>
+      </li>
+    </ul>
+
+  </div>
+
+  <!-- -------------------------------Section---------------------------------------- -->
+
+  <section>
+    <div class="sec1">
+      <h3>【本月推薦主打星】</h3>
+      <p>本月熱銷第一名商品!!還不快手刀<br>點選進來看看!!</p>
+      <div class="btn2">
+        <button class="img1" onclick="prevImage()"></button>
+        <button class="img2" onclick="nextImage()"></button>
+      </div>
+    </div>
+    <div class="sec2">
+      <div class="pic"><a href="#"><img src="../images/product/FREEDOM/F6.jpg" alt=""></a></div>
+      <div class="pic"><a href="#"><img src="../images/product/FREEDOM/F2.jpg" alt=""></a></div>
+      <div class="pic"><a href="#"><img src="../images/product/FREEDOM/F3.jpeg" alt=""></a></div>
+      <div class="pic"><a href="#"><img src="../images/product/FREEDOM/F5.jpeg" alt=""></a></div>
+      <div class="pic"><a href="#"><img src="../images/product/FREEDOM/F0.jpg" alt=""></a></div>
+      <p class="indicator"></p>
+    </div>
+  </section>
+
+  <!----------------------------------menu 選單------------------------------>
+  <section>
+    <div class="menu">
+      <ul class="m1">
+        <li><a href="#"><img src="../images/icon/menu/banda.svg" alt=""></a></li>
+        <li><a href="#"><img src="../images/icon/menu/tami.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/icon/menu/BOTTA.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/icon/menu/ROBORT.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/icon/menu/BOX.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/icon/menu/POKE.png" alt=""></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ---------------------main------------- -->
+
+  <div class="main1">
+
+    <div class="z1">
+      <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi exercitationem illo amet repellendus ex aperiam, enim vel maxime, laudantium ad quaerat ea laborum minus harum, praesentium reprehenderit expedita dolorem temporibus non assumenda consequatur? Aspernatur, sed. Quo amet distinctio delectus, a sapiente non, sequi, autem error blanditiis quibusdam maiores reprehenderit libero?</p> -->
+    </div>
+
+
+  </div>
+
+
+
+
+  <!-----------------------h1 標題------------------------------------>
+
+  <div class="main">
+
+    <div class="title">
+
+      <h1>■ ITEMS </h1>
+      <p>【本月推薦商品】</p>
+
+
+    </div>
+
+  </div>
+
+  <!-----------------------project 產品------------------------------------>
+  <!-- TR-1 -->
+  <section class="product">
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/MSE/TR1.png" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">機動戦士鋼彈 MOBILE SUIT ENSEMBLE 重裝X重奏 TR-1 海茲爾</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="500.0">￥500</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 力天使 -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/MSE/力天使.png" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">機動戦士鋼彈 MOBILE SUIT ENSEMBLE 重裝X重奏 GN-002 力天使</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="500.0">￥500</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 風靈風靈 -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/MSE/風鈴.png" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">機動戦士鋼彈 MOBILE SUIT ENSEMBLE 重裝X重奏 XVX-016 風靈</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="500.0">￥500</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Hi-nu -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/MSE/HI NU.png" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">機動戦士鋼彈 MOBILE SUIT ENSEMBLE 重裝X重奏 RX-93 HI-NU</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="500.0">￥500</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- MJG 03  -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/MJG/01 (1).jpg" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">機動戦士鋼彈 mobility joint gundam 第三彈 一組10入</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="6,500.0">￥6,500</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- MJG 02 -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/MJG/01 (2).jpg" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">機動戦士鋼彈 mobility joint gundam 第二彈 一組10入</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="5,900.0">￥5,900</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- MJG 01 -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/MJG/01 (3).jpg" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">機動戦士鋼彈 mobility joint gundam 第一一彈 一組10入</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="5,900.0">￥5,900</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- MJG 04 -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/MJG/01.jpg" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">機動戦士鋼彈 mobility joint gundam 第四彈 一組10入</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="6,500.0">￥6,500</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--風靈強化型  -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/hg/風靈-強化型.jpg" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">HG 機動戦士鋼彈 水星的魔女 風靈鋼彈-改修型</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="1,870.0">￥1,870</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--風靈  -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/hg/風靈.jpg" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">HG 機動戦士鋼彈 水星的魔女 XVX-016 風靈鋼彈</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="1,430.0">￥1,430</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 忍蛙 -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/EGG/FRAG.jpg" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">GASHAPON 精靈寶可夢 會發光! 寶可夢收藏2」轉蛋 甲賀忍蛙</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="500.0">￥500</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 桃太羅斯 -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/EGG/MOMO.jpg" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">GASHAPON 扭蛋 假面騎士電王 等待中的異魔神．續</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="400.0">￥400</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 打不開的扭蛋  -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/EGG/167774745338.jpg" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">GASHAPON「絕對打不開的轉蛋」 來自官方的挑戰 </a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="300.0">￥300</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Decade -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/KAMEN-RiDER/decade.png" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">假面騎士DECADE新版變身腰帶『CSM DECADRIVE Ver.2』</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="26,400.0">￥26,400</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 超人力霸王 -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/ULTRAMAN/ULTRA.png" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">BANDAI DYNACTION 超人力霸王 新．超人力霸王 靜態完成品</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="5,500.0">￥5,500</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 德卡 -->
+    <div class="row">
+      <div class="col">
+        <a class="pro-col" href="#"><img class="img3" src="../images/product/ULTRAMAN/DEKA.png" alt=""></a>
+        <div class="caption">
+          <h4><a class="name" href="#">BANDAI S.H.Figuarts SHF 超人力霸王 德卡 閃光型 可動完成品</a></h4>
+          <div class="price">
+            <span class="money" data-currency-from="JPY" data-amount="7,700.0">￥7,700</span>
+          </div>
+          <div class="cap-btn">
+            <button class="button"><a class="text">加入購物車</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secbtn">
+      <ul>
+        <li><a href="#">
+            <h1>顯示更多</h1>
+          </a></li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-------------------------------------FOOTER--------------------------------->
+
+  <footer>
+
+    <div>
+      <div class="final">
+        <div class="f1">
+          <img src="../images/LOGO/logo白.png" alt="玩具模人">
+        </div>
+        <div class="f3">
+          <h6>Copyright © 2023 ToyPlayer玩具模人有限公司 All Rights Reserved</h6>
+        </div>
+        <div class="f2">
+          <ul class="footlist">
+            <li><a href="#"><img src="../images/footer/IG.png" alt=""></a></li>
+            <li><a href="#"><img src="../images/footer/FB.png" alt=""></a></li>
+            <li><a href="#"><img src="../images/footer/YT.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+  </footer>
+  <!-- -----------------------------SWiper-------------------------------- -->
+  <script src="../JS/swiper.js"></script>
+
+</body>
+
+</html>
